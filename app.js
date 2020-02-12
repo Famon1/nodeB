@@ -1,6 +1,5 @@
-var app = require('express')(),
-    server = require('http').createServer(app);
+const express = requiry('express');
 
-server.listen(3000,'localhost', function() {
-    console.log('ready to go!');
-});
+const PORT = process.env.PORT || 3000;
+
+const app = express();

@@ -1,0 +1,54 @@
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Lists */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+#container {
+  position: relative;
+  padding: 0px 0px;
+  height:80%;
+}
+
+/* Menu Button */
+.menu-btn {
+  width: 30px;
+  padding: 3px;
+  float:left;
+  max-height:80px;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  border: 0px;
+  margin: 15px 10px 0px 0px;
+}
+.menu-btn:hover {
+  opacity: 0.6;
+}
+
+/* Header */
+.site-header {
+
+  width: 100%;
+  z-index: 9998;
+  padding: 0px 20px 0px 20px;
+}
+
+/* Footer */
+.site-footer {
+  position: relative;
+  border-top: 1px solid #EEE;
+  color: #999;
+  padding: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=demo.css.map */

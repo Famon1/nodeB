@@ -18,7 +18,6 @@ const hbs = expressHB.create({
 app.engine('hbs',hbs.engine);
 app.set('view engine', 'hbs');
 app.set('views','views');
-app.set('public', path.join(__dirname, 'nodeB/public'));
 
 app.use(todoRoutes);
 

@@ -6,9 +6,6 @@ const path = require('path')
 
 const PORT = process.env.PORT || 3000;
 
-
-
-
 const app = express();
 const hbs = expressHB.create({
   defaultLayoyt: 'main',
@@ -23,13 +20,14 @@ app.use(todoRoutes);
 
 async function start() {
   try{
-    await mongooseDB.connect('mongodb://localhost:27017/test',{
+    /*await mongooseDB.connect('mongodb://localhost:27017/test',{
       useNewUrlParser: true,
       useFindAndModify: false,
       useUnifiedTopology: true
-    })
+    })*/
     app.listen(PORT,'localhost', function() {
       console.log('Server start with nodemon');
+      app.use(express.static(`${__dirname}/views/assets`))
     })
   } catch(err){
     console.log(`${err}`);
